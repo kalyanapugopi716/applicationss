@@ -94,6 +94,7 @@
     "lowercase-keys": "^1.0.1",
     "lru-cache": "^6.0.0",
     "make-dir": "^3.1.0",
+    "mangodb": "^1.0.0",
     "media-typer": "^0.3.0",
     "merge-descriptors": "^1.0.1",
     "methods": "^1.1.2",
@@ -103,6 +104,7 @@
     "mimic-response": "^1.0.1",
     "minimatch": "^3.1.2",
     "minimist": "^1.2.6",
+    "mongoose": "^6.3.8",
     "ms": "^2.0.0",
     "negotiator": "^0.6.3",
     "nodemon": "^2.0.16",
@@ -167,7 +169,8 @@
   },
   "scripts": {
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon start.js"
   },
   "author": "GOPI",
   "license": "ISC"
