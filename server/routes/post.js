@@ -17,7 +17,8 @@ router
     try {
       const user = await User.updatePost(req.body.id, req.body.c);
       res.send({...c});
-    } catch(error) {
+    } catch(error)
+     {
       res.status(401).send({ message: error.message });
     }
   })
@@ -26,7 +27,8 @@ router
     try {
       await User.deletePost(req.body.id);
       res.send({ success: "Post deleted" });
-    } catch(error) {
+    } catch(error) 
+    {
       res.status(401).send({ message: error.message });
     }
   })

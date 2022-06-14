@@ -8,7 +8,8 @@ router
     try {
       const user = await User.login(req.body.username, req.body.password);
       res.send({...user, password: undefined});
-    } catch(error) {
+    } catch(error) 
+    {
       res.status(401).send({ message: error.message });
     }
   })
@@ -17,7 +18,8 @@ router
     try {
       const user = await User.register(req.body.username, req.body.password);
       res.send({...user, password: undefined});
-    } catch(error) {
+    } catch(error) 
+    {
       res.status(401).send({ message: error.message }); 
     }
   })
@@ -34,7 +36,7 @@ router
   .delete('/delete', async (req, res) => {
     try {
       await User.deleteUser(req.body.id);
-      res.send({ success: "Account deleted" });
+      res.send({ success: "Account Deleted Sucessfully." });
     } catch(error) {
       res.status(401).send({ message: error.message });
     }
